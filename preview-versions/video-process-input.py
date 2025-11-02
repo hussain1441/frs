@@ -9,6 +9,8 @@ import queue
 from dotenv import load_dotenv
 import os
 
+load_dotenv()
+
 # ----------------------
 # MongoDB & Model Setup
 # ----------------------

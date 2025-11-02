@@ -9,6 +9,8 @@ import insightface
 from dotenv import load_dotenv
 import os
 
+load_dotenv()
+
 # --- MongoDB setup (same as before) ---
 uri = os.getenv("MONGODB_URL")
 client = MongoClient(uri)

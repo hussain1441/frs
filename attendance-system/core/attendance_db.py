@@ -6,10 +6,12 @@ import time
 from dotenv import load_dotenv
 import os
 
+load_dotenv()
+
 uri = os.getenv("MONGODB_URL")
 client = MongoClient(uri)
 db = client[os.getenv("DB_NAME")]
-collection = db[os.getenv("ATTENDANCE_COLLECTION_NAME")]
+attendance_collection = db[os.getenv("ATTENDANCE_COLLECTION_NAME")]
 
 
 def ensure_entry():

@@ -9,6 +9,8 @@ import time
 from dotenv import load_dotenv
 import os
 
+load_dotenv()
+
 # mongodb connection
 uri = os.getenv("MONGODB_URL")
 client = MongoClient(uri)

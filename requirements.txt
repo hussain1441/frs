@@ -1,0 +1,18 @@
+# Core packages
+opencv-python
+insightface
+pymongo
+numpy
+fastapi
+uvicorn
+python-dotenv
+torch
+websockets
+
+# ONNX runtime
+onnxruntime-gpu; platform_system == "Windows"
+onnxruntime; platform_system == "Darwin" or platform_system == "Linux"
+
+# RealSense
+pyrealsense2; platform_system == "Windows" or platform_system == "Linux"
+pyrealsense2-macosx; platform_system == "Darwin"

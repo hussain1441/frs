@@ -6,6 +6,8 @@ from datetime import datetime
 from dotenv import load_dotenv
 import os
 
+load_dotenv()
+
 uri = os.getenv("MONGODB_URL")
 client = MongoClient(uri)
 db = client[os.getenv("DB_NAME")]

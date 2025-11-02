@@ -11,6 +11,8 @@ from attendance import mark_attendance, ensure_entry, get_last_punch_time
 from dotenv import load_dotenv
 import os
 
+load_dotenv()
+
 # mongodb connection
 uri = os.getenv("MONGODB_URL")
 client = MongoClient(uri)

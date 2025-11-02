@@ -10,6 +10,8 @@ from attendance import multi_camera_attendance, ensure_entry, get_last_punch_tim
 from dotenv import load_dotenv
 import os
 
+load_dotenv()
+
 latest_frames = {}  # camera_name -> latest frame
 frame_locks = {}  # camera_name -> threading.Lock()
 
