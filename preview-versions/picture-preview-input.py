@@ -12,7 +12,7 @@ import os
 load_dotenv()
 
 # image url
-image_url = "test.png"
+image_url = "input.jpg"
 
 # mongodb connection
 uri = os.getenv("MONGODB_URL")

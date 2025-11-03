@@ -7,7 +7,7 @@ import numpy as np
 import threading
 import time
 from datetime import date, datetime
-from attendance import mark_attendance, ensure_entry, get_last_punch_time
+from ..core.attendance_db import mark_attendance, ensure_entry, get_last_punch_time
 from dotenv import load_dotenv
 import os
 

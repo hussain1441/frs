@@ -17,7 +17,7 @@ print("Connected to MongoDB ✅")
 model = insightface.app.FaceAnalysis(name="buffalo_l")
 model.prepare(ctx_id=-1, det_size=(640, 640))
 
-with open("main-shits/all-employees.json", "r") as f:
+with open("setup/all-employees.json", "r") as f:
     users = json.load(f)
 
 for user in users:

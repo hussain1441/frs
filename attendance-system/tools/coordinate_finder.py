@@ -8,8 +8,8 @@ def click_event(event, x, y, flags, param):
         print(f"Clicked at: ({x}, {y})")
 
 
-# cap = cv2.VideoCapture("rtsp://localhost:8554/mystream")  # or your file
-cap = cv2.VideoCapture("rtsp://admin:admin@192.168.1.2:8554/live")
+cap = cv2.VideoCapture("rtsp://localhost:8554/mystream")  # or your file
+# cap = cv2.VideoCapture("rtsp://admin:admin@192.168.1.2:8554/live")
 
 while True:
     ret, frame = cap.read()

@@ -6,7 +6,11 @@ import numpy as np
 import threading
 import time
 from datetime import date, datetime
-from attendance import multi_camera_attendance, ensure_entry, get_last_punch_time
+from ..core.attendance_db import (
+    multi_camera_attendance,
+    ensure_entry,
+    get_last_punch_time,
+)
 from dotenv import load_dotenv
 import os
 
