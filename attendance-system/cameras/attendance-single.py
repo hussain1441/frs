@@ -1,4 +1,5 @@
 # single camera attendence system
+# run with 'python -m attendance-system.cameras.attendance-single'
 
 import cv2
 import insightface

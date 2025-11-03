@@ -183,7 +183,12 @@ Replace with your actual MongoDB credentials and database names.
 **macOS/Linux:**
 
 ```bash
+# Option 1 — Python venv
 python -m venv .env
+source .env/bin/activate
+
+# Option 2 — uv:
+uv venv .env --python 3.12
 source .env/bin/activate
 ```
 
@@ -415,13 +420,13 @@ Windows: Use the equivalent Windows version with minimal code differences.
 **Single camera setup:**
 
 ```bash
-python attendance-system/cameras/attendance-single.py
+python -m attendance-system.cameras.attendance-single
 ```
 
 **Multi-camera setup:**
 
 ```bash
-python attendance-system/cameras/attendance-multi.py
+python -m attendance-system.cameras.attendance-multi
 ```
 
 Multi-camera setup allows:
@@ -640,27 +645,3 @@ If you must use Jetson or ARM-based systems:
 -   Install Intel RealSense SDK
 -   Check USB 3.0 connection (required for depth features)
 -   Update RealSense firmware
-
-### Getting Help
-
-For additional support:
-
-1. Check error logs in console output
-2. Verify all prerequisites are installed
-3. Review `.env` configuration
-4. Test components individually (camera, MongoDB, model)
-5. Consult InsightFace and OpenCV documentation
-
----
-
-## Credits
-
--   **InsightFace**: Face recognition model
--   **MediaMTX**: RTSP server
--   **MongoDB**: Database solution
--   **OpenCV**: Computer vision library
-
----
-
-**Last Updated**: November 2025
-**Project Maintainer**: [Your Name/Organization]RetryClaude can make mistakes. Please double-check responses. Sonnet 4.5

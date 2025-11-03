@@ -1,4 +1,6 @@
 # multi-camera attendance system
+# run with 'python -m attendance-system.cameras.attendance-multi'
+
 import cv2
 import insightface
 from pymongo import MongoClient
